@@ -1,2 +1,7 @@
 # Computer-Vision-Final-Project
-An examination of loss funciton when it comes to Deep Image Prior
+
+This repository contains the code and analysis for my CS 484 (Computer Vision) final project.
+
+**Title**: Loss Function Design for Deep Image Prior Inpainting: An Empirical Analysis of MSE, SSIM, Perceptual, and Hybrid Approaches
+
+**Abstract**: This project explores the role of loss function design in *Deep Image Prior* (DIP) inpainting, where a convolutional neural network is trained on a single image to reconstruct masked regions. I investigated a variety of loss functions including: MSE, L1, SSIM, perceptual loss (using VGG16), and hybrid combinations of them. I analyzed their effect across shallow and deep U-Net-style architectures. My experiments confirm that MSE tends to produce blurry results, while L1 and SSIM improve sharpness and structure respectively, albeit with issues in color accuracy. Perceptual loss introduces semantic realism but requires longer optimization and introduces color instability. Hybrid losses that combine multiple objectives (e.g. perceptual + SSIM + L1 + color + total variation) are shown to be highly sensitive to hyperparameter tuning and optimization (iteration) length. Notably, I find that shallow networks trained with a simple SSIM-L1 loss can outperform deeper models when constrained by compute time. These findings suggest that loss function design has a greater impact on subjective visual quality than model depth alone in DIP, and that hybrid approaches require careful calibration. 
