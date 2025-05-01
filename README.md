@@ -1,6 +1,6 @@
 # Computer-Vision-Final-Project
 
-This repository contains the code and analysis for my CS 484 (Computer Vision) final project.
+This repository contains the code and analysis for my CS 484 (Computer Vision) final project. It is a build-your-own project, and I took the suggestion of Deep Image Prior and exploring how loss functions effect inpainting results.
 
 **Title**: Loss Function Design for Deep Image Prior Inpainting: An Empirical Analysis of MSE, SSIM, Perceptual, and Hybrid Approaches
 
